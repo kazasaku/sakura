@@ -930,7 +930,7 @@ static bool IsXMLWhiteSpace( int c )
 
 	@return 文字コード
 */
-static ECodeType MatchEncoding(const char* pBuf, int nSize)
+static ECodeType MatchEncoding( const char* pBuf, const size_t nSize )
 {
 	for(int k = 0; k < _countof(encodingNameToCode); k++ ){
 		const int nLen = encodingNameToCode[k].nLen;
